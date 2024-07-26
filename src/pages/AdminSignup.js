@@ -13,11 +13,12 @@ const AdminSignup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/register-admin', {
+      const response = await axios.post('https://jamoveoserver-production.up.railway.app/api/auth/register-admin', {
         username,
         password,
         instrument
       });
+
       console.log(response.data);
       navigate('/login');
     } catch (err) {

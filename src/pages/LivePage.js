@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import io from 'socket.io-client';
 
-const socket = io(process.env.REACT_APP_SERVER_URL || 'http://localhost:5000');
+const socket = io(process.env.REACT_APP_SERVER_URL || 'https://jamoveoserver-production.up.railway.app');
 
 const LivePage = () => {
   const navigate = useNavigate();

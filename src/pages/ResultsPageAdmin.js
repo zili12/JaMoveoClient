@@ -4,7 +4,7 @@ import io from 'socket.io-client';
 import axios from 'axios';
 import '../styles/ResultsPageAdmin.css';
 
-const socket = io(process.env.REACT_APP_SERVER_URL || 'http://localhost:5000');
+const socket = io(process.env.REACT_APP_SERVER_URL || 'https://jamoveoserver-production.up.railway.app/');
 
 const ResultsPageAdmin = () => {
   const [searchResults, setSearchResults] = useState([]);

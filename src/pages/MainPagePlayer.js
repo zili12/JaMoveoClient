@@ -4,7 +4,7 @@ import io from 'socket.io-client';
 import { useLocation } from 'react-router-dom';
 import '../styles/MainPagePlayer.css';
 
-const socket = io(process.env.REACT_APP_SERVER_URL || 'http://localhost:5000');
+const socket = io(process.env.REACT_APP_SERVER_URL || 'https://jamoveoserver-production.up.railway.app/');
 
 const MainPagePlayer = () => {
   const [message, setMessage] = useState('Waiting for next song...');
